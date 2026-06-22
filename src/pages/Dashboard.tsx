@@ -3,7 +3,7 @@ import BentoCard from '../components/ui/BentoCard'
 import RadarChart from '../components/ui/RadarChart'
 import CountUp from '../components/ui/CountUp'
 import SplitText from '../components/ui/SplitText'
-import { focal, slideFromRight, fadeUp, blurFade, pop, easeOutExpo } from '../lib/variants'
+import { focal, slideFromRight, fadeUp, blurFade, pop } from '../lib/variants'
 
 /** Clone a base variant with an explicit entrance delay (non-linear orchestration). */
 function withDelay(base: Variants, delay: number): Variants {
