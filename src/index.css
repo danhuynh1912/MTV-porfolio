@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-mono: 'Intel One Mono', ui-monospace, monospace;
+  --font-space: 'Space Mono', ui-monospace, monospace;
+
+  --color-canvas: #f0f0f0;
+  --color-canvas-deep: #e8e8e8;
+  --color-card: #f3f0ea;
+  --color-card-alt: #efece5;
+  --color-ink: #1b1b1d;
+  --color-ink-soft: #6b6b70;
+  --color-ink-faint: #9a9aa0;
+  --color-accent: #7b3ff2;
+  --color-line: #dedbd3;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-mono);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.12);
+  border-radius: 999px;
+}
